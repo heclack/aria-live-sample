@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style/stylesheet.css">
+
+
+</head>
+
+<body>
+    <h1>All About the Paw Patrol</h1>
+    <label for="pup-button">Pick A pup</label>
+
+    <button class="pup-button" id="Everest" aria-label="Everest">Everest</button>
+    <button class="pup-button" id="Marshall" aria-label="Marshall">Marshall</button>
+
+    <!-- Here is where we tell Aria javascript will be altering the content -->
+    <div role="region" id="pupInfo" aria-live="assertive">
+        <img class="images" id="pup-portait" src="pawpatrol/pawpatrol1.jpg" aria-label="The Paw Patrol Team" />
+        <p id="pup-description"></p>
+       <!-- <div id="MyClockDisplay" class="clock" onload="showTime()"></div>-->
+    </div>
+    <script src="./logic.js"></script>
+</body>
+
+</html>
